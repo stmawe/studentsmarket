@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - StudentMarket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <h1 style="color: rgb(102, 0, 255);">SMW</h1><br><br>
+        <ul class="sidebar-nav">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-box"></i>
+                    <span>My Listings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-comments"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-heart"></i>
+                    <span>Favorites</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navbar -->
+        <header class="top-navbar">
+            <div class="navbar-left">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+             
+            </div>
+            <div class="navbar-right">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="notification-btn" aria-label="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="profile-dropdown">
+                    <button class="profile-btn">
+                        <img src="assets/avatar.png" alt="Profile" class="profile-avatar">
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h1>Hey <span class="student-name">Alex</span>, here's your dashboard</h1>
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <i class="fas fa-box"></i>
+                        <div class="card-content">
+                            <h3>Total Listings</h3>
+                            <p class="count">12</p>
+                        </div>
+                    </div>
+    
+                    <div class="summary-card">
+                        <i class="fas fa-comments"></i>
+                        <div class="card-content">
+                            <h3>Active Chats</h3>
+                            <p class="count">5</p>
+                        </div>
+                    </div>
+
+            </section>
+
+            <!-- My Listings Section -->
+            <section class="listings-section">
+                <div class="section-header">
+                    <h2>My Listings</h2>
+                    <button class="new-item-btn">
+                        <i class="fas fa-plus"></i>
+                        New Item
+                    </button>
+                </div>
+               
+            </section>
+        </div>
+    </main>
+
+    <!-- Floating Action Button -->
+    <button class="fab" aria-label="Add new item">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html> 

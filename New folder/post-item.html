@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post New Item - StudentMarket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="post-item.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <button class="back-button" aria-label="Go back">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <main class="post-item-container">
+        <div class="form-card">
+            <!-- Header -->
+            <div class="form-header">
+                <h1>Post New Item</h1>
+            
+            </div>
+
+            <!-- Form -->
+            <form class="post-item-form">
+                <!-- Photos Section -->
+                <div class="form-section">
+                    <h2>Photo <span class="required">*</span></h2>
+                    <p class="hint">Add a clear photo of your item.</p>
+                    <div class="single-photo-upload">
+                        <div class="photo-upload-box">
+                            <i class="fas fa-camera"></i>
+                            <span>Add Photo</span>
+                            <input type="file" id="photo-input" accept="image/*" required>
+                        </div>
+                        <div id="photo-preview" class="photo-preview"></div>
+                    </div>
+                </div>
+
+                <!-- Basic Info Section -->
+                <div class="form-section">
+                    <h2>Item Details</h2>
+                    
+                    <div class="form-group">
+                        <label for="title">Title <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-box"></i>
+                            <input type="text" id="title" placeholder="e.g., MacBook Pro 2021" required>
+                            <div class="tooltip" data-tooltip="Be specific with your item's title">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-tag"></i>
+                            <select id="category" required>
+                                <option value="">Select a category</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="books">Books</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="fashion">Fashion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="condition">Condition <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-star"></i>
+                            <select id="condition" required>
+                                <option value="">Select condition</option>
+                                <option value="new">New</option>
+                                <option value="like-new">Like New</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <select id="location" required>
+                                <option value="">Select your university</option>
+                                <option value="ku">Kenyatta University</option>
+                                <option value="jkuat">JKUAT</option>
+                                <option value="uon">University of Nairobi</option>
+                                <option value="egerton">Egerton University</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price (KES) <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-tag"></i>
+                            <input type="number" id="price" placeholder="e.g., 5000" required>
+                            <div class="tooltip" data-tooltip="Set a reasonable price for quick sale">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <textarea id="description" rows="4" placeholder="Describe your item in detail..." required></textarea>
+                            <div class="char-count">0/500</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">WhatsApp/Phone <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <i class="fab fa-whatsapp"></i>
+                            <input type="tel" id="contact" placeholder="07XX XXX XXX" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms Section -->
+                <div class="form-section">
+                    <div class="terms-group">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#">Terms & Conditions</a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="form-actions">
+     
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Post Item
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="post-item.js"></script>
+</body>
+</html> 

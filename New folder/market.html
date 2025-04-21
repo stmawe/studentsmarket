@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentMarket - Browse Items</title>
+    <link rel="stylesheet" href="market.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">SMW</a>
+            
+            <div class="nav-center">
+                <div class="location-selector">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kenyatta University</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search items..." aria-label="Search items">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#" class="nav-link">Post Item</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="login-btn">Login</button>
+                <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="filters-bar">
+            <div class="filter-group">
+                <select class="filter-select" aria-label="Select category">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="books">Books</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="clothing">Clothing</option>
+                </select>
+                <select class="filter-select" aria-label="Select condition">
+                    <option value="">Condition</option>
+                    <option value="new">New</option>
+                    <option value="like-new">Like New</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                </select>
+                <select class="filter-select" aria-label="Select price range">
+                    <option value="">Price Range</option>
+                    <option value="0-1000">0 - 1000 KSH</option>
+                    <option value="1000-5000">1000 - 5000 KSH</option>
+                    <option value="5000+">5000+ KSH</option>
+                </select>
+                <select class="filter-select" aria-label="Sort by">
+                    <option value="">Sort By</option>
+                    <option value="newest">Newest First</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="assets/item1.jpg" alt="JBL Headphones" class="product-image">
+                <span class="condition-badge">Like New</span>
+                <div class="product-info">
+                    <h3>JBL Wireless Headphones</h3>
+                    <p class="price">
+                        <i class="fas fa-tag"></i>
+                        KSH 3,500
+                    </p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-clock"></i> Posted 2 days ago</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Main Campus</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn call" aria-label="Call seller">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                        <button class="action-btn whatsapp" aria-label="WhatsApp seller">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="action-btn chat" aria-label="Chat with seller">
+                            <i class="fas fa-comments"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="assets/item2.jpg" alt="Brown Jacket" class="product-image">
+                <span class="condition-badge">New</span>
+                <div class="product-info">
+                    <h3>Brown Leather Jacket</h3>
+                    <p class="price">
+                        <i class="fas fa-tag"></i>
+                        KSH 2,800
+                    </p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-clock"></i> Posted 1 day ago</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Nyayo Hostels</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn call" aria-label="Call seller">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                        <button class="action-btn whatsapp" aria-label="WhatsApp seller">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="action-btn chat" aria-label="Chat with seller">
+                            <i class="fas fa-comments"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="assets/item3.jpg" alt="Laptop" class="product-image">
+                <span class="condition-badge">Good</span>
+                <div class="product-info">
+                    <h3>HP Laptop - Core i5</h3>
+                    <p class="price">
+                        <i class="fas fa-tag"></i>
+                        KSH 35,000
+                    </p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-clock"></i> Posted 3 days ago</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Library</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn call" aria-label="Call seller">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                        <button class="action-btn whatsapp" aria-label="WhatsApp seller">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="action-btn chat" aria-label="Chat with seller">
+                            <i class="fas fa-comments"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More product cards -->
+            <div class="product-card">
+                <img src="assets/item4.jpg" alt="Calculator" class="product-image">
+                <span class="condition-badge">Fair</span>
+                <div class="product-info">
+                    <h3>Scientific Calculator</h3>
+                    <p class="price">
+                        <i class="fas fa-tag"></i>
+                        KSH 1,200
+                    </p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-clock"></i> Posted today</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Engineering Block</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="action-btn call" aria-label="Call seller">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                        <button class="action-btn whatsapp" aria-label="WhatsApp seller">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button class="action-btn chat" aria-label="Chat with seller">
+                            <i class="fas fa-comments"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="floating-post-btn" aria-label="Post new item">
+            <i class="fas fa-plus"></i>
+        </button>
+    </main>
+
+    <script src="market.js"></script>
+</body>
+</html> 
